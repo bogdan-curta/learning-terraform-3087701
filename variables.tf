@@ -19,12 +19,13 @@ variable "ami_flter" {
 
 variable "environment" {
   desciption = "Development Environment"
+
   type = object({
     name           = string
     network_prefix = string
   })
-  
-  default = object{
+
+  default = {
     name           = "dev"
     network_prefix = "10.0"
   }
