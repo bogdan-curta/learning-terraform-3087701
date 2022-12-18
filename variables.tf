@@ -4,7 +4,7 @@ variable "instance_type" {
 }
 
 variable "ami_flter" {
-  desciption = "Name filter and owner for AMI"
+  description = "Name filter and owner for AMI"
 
   type = object({
     name  = string
@@ -18,7 +18,7 @@ variable "ami_flter" {
 }
 
 variable "environment" {
-  desciption = "Development Environment"
+  description = "Development Environment"
 
   type = object({
     name           = string
@@ -32,11 +32,11 @@ variable "environment" {
 }
 
 variable "asg_min_size"{
-    desciption = "minimum number of isntances in the ASG"
+    description = "minimum number of isntances in the ASG"
     default = 1
 }
 
 variable "asg_max_size"{
-    desciption = "maximum number of isntances in the ASG"
+    description = "maximum number of isntances in the ASG"
     default = 2
 }
